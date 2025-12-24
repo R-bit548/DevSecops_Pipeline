@@ -21,8 +21,8 @@ jobs:
       - name: Build with Maven
         run: mvn clean package -DskipTests=true
 
-      - name: Upload JAR to Nexus
+      - name: Upload artifact to Nexus
         run: |
-          curl -u "${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }}" \
+          curl -u ${{ secrets.NEXUS_USER }}:${{ secrets.NEXUS_PASSWORD }} \
           --upload-file target/*.jar \
-          http://13.233.164.134/repository/maven-releases/
+          http://13.233.164.134:8081/repository/maven-releases/

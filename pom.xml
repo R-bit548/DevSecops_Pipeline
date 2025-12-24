@@ -8,18 +8,18 @@
   <version>3.2.0-SNAPSHOT</version>
   
   <distributionManagement>
-   <repository>
-    <id>maven-releases</id>
-    <url>https://13.233.140.136:8081/repository/maven-releases/</url>
-  </repository>
-  <snapshotRepository>
-    <id>maven-snapshots</id>
-    <url>https://13.233.140.136:8081/repository/maven-snapshots/</url>
-  </snapshotRepository>
-  </distributionManagement>
+   <repositories>
+    <repository>
+        <id>nexus-releases</id>
+        <url>https://3.110.132.8:8081/repository/maven-releases/</url>
+    </repository>
+    <repository>
+        <id>nexus-snapshots</id>
+        <url>https://3.110.132.8:8081/repository/maven-snapshots/</url>
+    </repository>
+</repositories>
 
-  <parent>
-    <groupId>org.springframework.boot</groupId>
+  </distributionManagement>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>3.2.0</version>
   </parent>
