@@ -25,4 +25,4 @@ jobs:
         run: |
           curl -u ${{ secrets.NEXUS_USER }}:${{ secrets.NEXUS_PASSWORD }} \
           --upload-file target/*.jar \
-          http://13.233.164.134:8081/repository/maven-releases/
+          http://13.233.140.136:8081/repository/maven-releases/
