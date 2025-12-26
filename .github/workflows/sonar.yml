@@ -27,7 +27,7 @@ jobs:
       - name: SonarCloud Scan
         run: >
           mvn sonar:sonar
-          -Dsonar.projectKey=R-bit548_DevSecops_Pipeline
-          -Dsonar.organization=R-bit548
+          -Dsonar.projectKey=r-bit548_DevSecops_Pipeline
+          -Dsonar.organization=r-bit548
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
