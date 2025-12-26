@@ -2,12 +2,32 @@
 name: Sonar Scan
 
 on:
- workflow_call:
+  workflow_call:
 
 jobs:
   sonar:
-    runs-on: java_build
-    #needs: build  # Ensures Sonar runs after build succeeds
+    runs-on: java_build   # self-hosted runner label
+
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Verify Java version
+        run: |
+          java -version
+          mvn -version
+
       - name: SonarCloud Scan
-        run: mvn sonar:sonar -Dsonar.projectKey=r-bit548_DevSecops_Pipeline -Dsonar.organization=r-bit548 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=03cccd065f4c8e77aa1bc16f6444b05c59478cfa
+        run: >
+          mvn sonar:sonar
+          -Dsonar.projectKey=r-bit548_DevSecops_Pipeline
+          -Dsonar.organization=r-bit548
+          -Dsonar.host.url=https://sonarcloud.io
+          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
