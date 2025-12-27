@@ -19,8 +19,8 @@ jobs:
       - name: SonarCloud Scan
         run: |
           mvn clean verify sonar:sonar \
-            -Dsonar.projectKey=mayur-projectsanalysis_pet \
-            -Dsonar.organization=mayur-projects \
+            -Dsonar.projectKey=r-bit548-1_DevSecops_Pipeline \
+            -Dsonar.organization=r-bit548-1 \
             -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
-            -Dsonar.branch.name=main
+            -Dsonar.branch.name=main \
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
