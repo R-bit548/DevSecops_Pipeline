@@ -16,4 +16,4 @@ jobs:
       #   uses: actions/upload-artifact@v3
       #   with:
       #     name: test-results
-      #     path: target/test-classes/TEST-*.xml
+      #     path: target/test-classes/TEST-*.ls

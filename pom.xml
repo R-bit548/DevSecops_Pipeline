@@ -28,14 +28,18 @@
 
   <properties>
 
-    <!-- Generic properties -->
+    <properties>
     <java.version>17</java.version>
-    <sonar.organization>devops-project3884530</sonar.organization>
+
+    <!-- SonarQube configuration -->
+    <sonar.projectKey>DevSecops_Pipeline</sonar.projectKey>
+    <sonar.projectName>spring-petclinic</sonar.projectName>
+    <sonar.branch.name>main</sonar.branch.name>
+
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <!-- Important for reproducible builds. Update using e.g. ./mvnw versions:set -DnewVersion=... -->
     <project.build.outputTimestamp>2023-05-10T07:42:50Z</project.build.outputTimestamp>
-
+</properties>
     <!-- Web dependencies -->
     <webjars-bootstrap.version>5.3.2</webjars-bootstrap.version>
     <webjars-font-awesome.version>4.7.0</webjars-font-awesome.version>
