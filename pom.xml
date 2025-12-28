@@ -32,7 +32,6 @@
     <!-- SonarQube configuration -->
     <sonar.projectKey>DevSecops_Pipeline</sonar.projectKey>
     <sonar.projectName>spring-petclinic</sonar.projectName>
-    <sonar.branch.name>main</sonar.branch.name>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
