@@ -26,8 +26,6 @@
   <name>petclinic</name>
 
 
-  <properties>
-
     <properties>
     <java.version>17</java.version>
 
@@ -39,7 +37,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.outputTimestamp>2023-05-10T07:42:50Z</project.build.outputTimestamp>
-</properties>
+
     <!-- Web dependencies -->
     <webjars-bootstrap.version>5.3.2</webjars-bootstrap.version>
     <webjars-font-awesome.version>4.7.0</webjars-font-awesome.version>
@@ -51,8 +49,8 @@
     <maven-checkstyle.version>3.3.1</maven-checkstyle.version>
     <nohttp-checkstyle.version>0.0.11</nohttp-checkstyle.version>
     <spring-format.version>0.0.40</spring-format.version>
-
   </properties>
+
 
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
