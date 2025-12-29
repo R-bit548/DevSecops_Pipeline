@@ -21,11 +21,12 @@ jobs:
       - name: SonarCloud Scan
         env:
           SONAR_SCANNER_OPTS: "-Xmx768m"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mvn clean verify sonar:sonar \
             -Dsonar.projectKey=r-bit548 \
             -Dsonar.organization=r-bit548 \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
-            -Dsonar.GITHUB_TOKEN=${{ secrets.GIT_TOKEN }}
+            
 
