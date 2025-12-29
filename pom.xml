@@ -30,8 +30,8 @@
     <java.version>17</java.version>
 
     <!-- SonarQube configuration -->
-    <sonar.projectKey>DevSecops_Pipeline</sonar.projectKey>
-    <sonar.projectName>spring-petclinic</sonar.projectName>
+    <sonar.projectKey>r-bit548</sonar.projectKey>
+    <sonar.projectName>r-bit548</sonar.projectName>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
